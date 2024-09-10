@@ -13,6 +13,8 @@ class SummaryAdmin(admin.ModelAdmin):
         view = super().changelist_view(request, extra_context)
         try:
             view.context_data['summary'] = self.get_summary(request, view.context_data['cl'].queryset)
-        except KeyError or AttributeError:
+        except KeyError:
+            pass
+        except AttributeError:
             pass
         return view
