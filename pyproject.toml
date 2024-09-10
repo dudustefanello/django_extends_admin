@@ -5,9 +5,9 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pip-app"
+name = "djang-extends-admin"
 version = "0.1"
-description = "Template para Python Package"
+description = "Features for admin"
 dependencies = []
 readme = "README.md"
 requires-python = ">= 3.10"
@@ -30,4 +30,4 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/dudustefanello/pip_app/"
+Homepage = "https://github.com/dudustefanello/django_extends_admin/"
