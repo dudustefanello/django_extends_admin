@@ -1,4 +1,4 @@
-from src.summary_admin.admin import SummaryAdmin
+from summary_admin.admin import SummaryAdmin
 
 
 class AdminLinks(SummaryAdmin):
