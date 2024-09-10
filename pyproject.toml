@@ -6,9 +6,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "djang-extends-admin"
-version = "0.1"
+version = "0.2"
 description = "Features for admin"
-dependencies = []
+dependencies = [
+    "django>=5",
+]
 readme = "README.md"
 requires-python = ">= 3.10"
 authors = [
