@@ -1,0 +1,7 @@
+{% extends 'summary_admin/summary_change_list.html' %}
+
+{% load change_list_links %}
+
+{% block object-tools-items %}
+  {% change_list_object_tools_links %}
+{% endblock %}
