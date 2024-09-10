@@ -5,7 +5,7 @@
 {% block object-tools-items %}
   {% for link in links %}
     <li>
-      <a href="{{ link.url }}" class="historylink">{{ link.description }}</a>
+      <a href="{{ link.url }}{% if link.querystring %}{% querystring %}{% endif %}" class="historylink">{{ link.description }}</a>
     </li>
   {% endfor %}
   {{ block.super }}

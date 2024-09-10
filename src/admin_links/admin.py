@@ -6,7 +6,7 @@ class AdminLinks(SummaryAdmin):
     change_list_template = 'admin_links/change_list_links.html'
 
     def get_change_links(self, request, obj=None):
-        """ :rtype: [{'url': str, 'description': str}]
+        """ :rtype: [{'url': str, 'description': str, 'querystring': bool}]
         """
         return None
 
