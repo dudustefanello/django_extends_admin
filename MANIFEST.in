@@ -1,2 +1,2 @@
-recursive-include summary_admin/templates*.html
-recursive-include admin_links/templates*.html
+recursive-include summary_admin/templates *.html
+recursive-include admin_links/templates *.html
