@@ -2,7 +2,7 @@ name: Upload Python Package - Private
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 permissions:
   contents: read
