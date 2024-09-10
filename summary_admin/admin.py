@@ -1,5 +1,6 @@
 from django.contrib import admin
 
+
 class SummaryAdmin(admin.ModelAdmin):
     change_list_template = 'summary_admin/summary_change_list.html'
 
@@ -12,6 +13,6 @@ class SummaryAdmin(admin.ModelAdmin):
         view = super().changelist_view(request, extra_context)
         try:
             view.context_data['summary'] = self.get_summary(request, view.context_data['cl'].queryset)
-        except KeyError or AttributeError as e:
-            print(e)
+        except KeyError or AttributeError:
+            pass
         return view
