@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AdminLinksConfig(AppConfig):
+class DjangoSummaryAdminConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'admin_links'
+    name = 'src.summary_admin'
