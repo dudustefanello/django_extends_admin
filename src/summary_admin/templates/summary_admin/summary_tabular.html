@@ -70,7 +70,7 @@
     <th class="original"></th>
      {% for field in inline_admin_formset.fields %}
        <th class="column-{{ field.name }}{% if field.required %} required{% endif %}{% if field.widget.is_hidden %} hidden{% endif %}">
-       {% if inline_admin_formset.formset.summary|get_dict_item_column:field.name %}
+       {% if inline_admin_formset.formset.summary|get_dict_item_column:field.name != None %}
         {% translate 'total: '|capfirst %}
         {{ inline_admin_formset.formset.summary|get_dict_item_column:field.name|decimal_format:2 }}{% endif %}
        </th>

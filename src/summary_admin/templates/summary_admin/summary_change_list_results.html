@@ -36,7 +36,7 @@
     <tr>
     {% for header in result_headers %}
     <th scope="col"{{ header.class_attrib }}>
-    {% if context.summary|get_dict_item_column:header.text %}
+    {% if context.summary|get_dict_item_column:header.text != None %}
     {% translate 'total: '|capfirst %}
     {{ context.summary|get_dict_item_column:header.text|decimal_format:2 }}{% endif %}
     </th>{% endfor %}

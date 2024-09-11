@@ -35,7 +35,8 @@ class SummaryTabularInline(admin.TabularInline):
     def get_formset(self, request, obj=None, **kwargs):
         formset = super().get_formset(request, obj, **kwargs)
         self.queryset = self.get_queryset(request)
-        setattr(formset, 'summary', self.get_summary(request, self.queryset.filter(**{formset.fk.name: obj})))
+        if self.queryset:
+            setattr(formset, 'summary', self.get_summary(request, self.queryset.filter(**{formset.fk.name: obj})))
         return formset
 
     def get_summary(self, request, queryset=None):
