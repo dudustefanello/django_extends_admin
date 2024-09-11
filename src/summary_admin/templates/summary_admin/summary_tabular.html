@@ -75,6 +75,7 @@
         {{ inline_admin_formset.formset.summary|get_dict_item_column:field.name|decimal_format:2 }}{% endif %}
        </th>
      {% endfor %}
+      <th></th>
      </tr>
     </tfoot>
    {% endif %}
