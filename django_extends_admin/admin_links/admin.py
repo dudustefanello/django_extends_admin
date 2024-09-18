@@ -1,4 +1,4 @@
-from summary_admin.admin import SummaryAdmin
+from django_extends_admin.summary_admin.admin import SummaryAdmin
 
 
 class AdminLinks(SummaryAdmin):
