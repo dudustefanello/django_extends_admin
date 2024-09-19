@@ -1,2 +1,2 @@
-recursive-include src/summary_admin/templates *.html
-recursive-include src/admin_links/templates *.html
+recursive-include django_extends_admin/summary_admin/templates *.html
+recursive-include django_extends_admin/admin_links/templates *.html
