@@ -9,7 +9,7 @@ name = "django-extends-admin"
 version = "1.0.0"
 description = "Features for admin"
 dependencies = [
-    "django>=5",
+    "django>=5.2.13",
 ]
 readme = "README.md"
 requires-python = ">= 3.10"
